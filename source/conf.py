@@ -17,7 +17,16 @@ release = '2023'
 matlab_src_dir = os.path.dirname(os.path.abspath(__file__))
 matlab_show_property_default_value = True
 matlab_short_links = True
-extensions = ['sphinxcontrib.matlab', 'sphinx.ext.autodoc']
+extensions = [
+    'sphinx.ext.viewcode',   
+    'sphinx.ext.duration',
+    'sphinx.ext.doctest',
+    'sphinxcontrib.matlab',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.intersphinx',
+   
+]
 
 primary_domain = "mat"
 
