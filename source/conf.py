@@ -14,7 +14,9 @@ release = '2023'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ['sphinxcontrib.matlab', 'sphinx.ext.autodoc']
+
+primary_domain = "mat"
 
 templates_path = ['_templates']
 exclude_patterns = []
