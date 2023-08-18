@@ -5,7 +5,8 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
+import os
+import sys
 project = 'howtoRTD'
 copyright = '2023, shadi'
 author = 'shadi'
