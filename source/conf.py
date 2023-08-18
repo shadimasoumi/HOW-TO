@@ -5,7 +5,8 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
+import os
+import sys
 project = 'howtoRTD'
 copyright = '2023, shadi'
 author = 'shadi'
@@ -13,8 +14,12 @@ release = '2023'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+matlab_src_dir = os.path.dirname(os.path.abspath(__file__))
+matlab_show_property_default_value = True
+matlab_short_links = True
+extensions = ['sphinxcontrib.matlab', 'sphinx.ext.autodoc']
 
-extensions = []
+primary_domain = "mat"
 
 templates_path = ['_templates']
 exclude_patterns = []
